@@ -1,0 +1,15 @@
+<p>
+    Remove Customer
+  </p>
+  <form style="margin-left: 20px" class="form-inline">
+
+  <div class="form-group">
+      <label for="inputCustomer Name"> Customer name</label>
+      <input class="form-control" 
+      type="text" id="customerName" name="customerName" [(ngModel)] = "customertoremove"/>
+  </div>
+
+  <button (click) = "removeCustomer()" type="submit" class="btn btn-default">Remove</button>
+</form>
+
+

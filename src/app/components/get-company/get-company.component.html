@@ -1,0 +1,33 @@
+<form style="margin-left: 20px" class="form-inline">
+        
+
+    <div class="form-group">
+        <label for="inputCompany Name">Company name</label>
+        <input class="form-control"  
+                type="text" id="compName" name="compName" [(ngModel)]="compName"/>
+    </div>
+    <div>
+        <button (click) = "getCompany()" type="submit" class="btn btn-default">Get Company</button>
+        <br>
+        </div>
+        <table style="margin-left: 10px" class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>name</th>
+                    <th>Password</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{_company.id}}</td>
+                    <td>{{_company.compName}}</td>
+                    <td>{{_company.password}}</td>
+                     <td>{{_company.email}}</td>
+ 
+                </tr>
+            </tbody>
+        </table>
+         
+  </form>
